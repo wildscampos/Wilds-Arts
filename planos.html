@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Planos — Wilds Art's</title>
+  <meta name="description" content="Planos de assinatura acessíveis para criação de artes para redes sociais: a partir de R$ 250/mês até R$ 1.000/mês." />
+  <meta name="robots" content="index, follow" /><meta name="theme-color" content="#0A0A0A" />
+  <link rel="preload" as="style" href="styles.css"><link rel="stylesheet" href="styles.css">
+  <style>
+    .pricing-hero{padding-top:calc(var(--header-h) + 28px);padding-bottom:32px;text-align:center}
+    .pricing-hero h1{margin:.25rem 0 .25rem;font-size:clamp(1.7rem,4.5vw,2.6rem)}
+    .pricing-hero p{color:var(--ink-70)}
+    .pricing{padding:36px 0}
+    .pricing-grid{display:grid;gap:16px;grid-template-columns:repeat(4,1fr)}
+    .plan{position:relative;padding:22px;background:#ffffff0d;border:1px solid #ffffff1f;border-radius:16px;backdrop-filter:blur(8px)}
+    .plan h3{margin:0 0 .25rem}
+    .price{font-weight:900;font-size:clamp(1.6rem,3.5vw,2rem);margin:.25rem 0 8px}
+    .period{color:var(--ink-50);font-weight:600}
+    .features{list-style:none;margin:10px 0 16px;padding:0}
+    .features li{margin:.4rem 0}
+    .badge{position:absolute;top:14px;right:14px;background:var(--accent);color:#000;padding:.25rem .6rem;border-radius:999px;font-weight:900;font-size:.8rem}
+    .btn-block{display:flex;gap:10px;flex-direction:column}
+    .btn-ghost{border-color:#ffffff55}
+    .plan.recommended{border-color:var(--accent);box-shadow:0 0 0 2px #f26b3526}
+    .plan.recommended .price{color:var(--accent)}
+    .compare{margin-top:36px}
+    .compare table{width:100%;border-collapse:collapse;background:#ffffff0d;border:1px solid #ffffff1f;border-radius:16px;overflow:hidden}
+    .compare th,.compare td{padding:12px 10px;border-bottom:1px solid #ffffff1a;text-align:center}
+    .compare th{text-align:left;background:#111}
+    .compare tr:last-child td{border-bottom:0}
+    @media(max-width: 960px){.pricing-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width: 560px){.pricing-grid{grid-template-columns:1fr}}
+  
+    /* Countdown */
+    .countdown{display:flex;gap:10px;justify-content:center;align-items:end;margin:10px auto 0;flex-wrap:wrap}
+    .countdown .box{background:#ffffff0f;border:1px solid #ffffff2b;border-radius:12px;padding:10px 12px;min-width:68px;text-align:center}
+    .countdown .num{font-size:clamp(1.2rem,5vw,2rem);font-weight:900;line-height:1;color:var(--accent)}
+    .countdown .label{font-size:.8rem;color:#ffffffb3}
+    .countdown .until{width:100%;text-align:center;margin-top:6px;color:#ffffffcc}
+  </style>
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true"><span class="orb orb-orange"></span><span class="orb orb-white"></span><span class="orb orb-orange-2"></span></div>
+  <header class="site-header"><div class="container header-grid">
+    <a class="brand" href="index.html#inicio" aria-label="Ir para o início"><span class="brand-badge"><img src="Logo Horizontal.webp" alt="Wilds Art's — logotipo horizontal" width="160" height="40"/></span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Navegação principal"><ul>
+      <li><a href="index.html#sobre">Sobre</a></li><li><a href="index.html#servicos">Serviços</a></li><li><a href="index.html#portfolio">Portfólio</a></li><li><a href="index.html#depoimentos">Depoimentos</a></li><li><a href="#planos">Planos</a></li><li><a href="index.html#contato">Contato</a></li>
+    </ul></nav>
+  </div></header>
+
+  <main id="planos">
+    <section class="pricing-hero container"><h1>Planos de Assinatura</h1>
+      <p>Simples e acessíveis: de <strong>R$ 250</strong> a <strong>R$ 1.000</strong> por mês. Escolha e assine direto pelo WhatsApp.</p>
+    
+    <div class="cta-row" style="margin-top:10px; justify-content:center;">
+      <a class="btn btn-accent" href="planos_wildsarts.pdf" download>Baixar PDF</a>
+      <a class="btn btn-ghost" href="planos_wildsarts.pdf" target="_blank" rel="noopener">Abrir PDF</a>
+    </div>
+    
+    </section>
+
+    
+    <!-- PROMOÇÃO: Indique & Ganhe 2026 -->
+    <section id="promocao" class="container" style="padding:24px 0 8px 0">
+      <div class="glass" style="padding:18px;border-radius:16px;border:1px solid #f26b3540">
+        <div class="section-header center">
+          <h2 style="margin:0 0 6px 0">🎁 Promoção <span style="color:#F26B35">Indique &amp; Ganhe 2026</span></h2>
+          <p class="lead">Assinou e indicou alguém que assinou? Você concorre a <b>1 ano do plano ESSENCIAL (R$ 500/mês)</b> grátis em 2026.</p>
+        
+        <div id="promo-countdown" class="countdown" aria-live="polite"
+             aria-label="Contagem regressiva encerra em 31/12/2025"
+             data-deadline="2025-12-31T23:59:59-03:00">
+          <div class="box"><div class="num" id="cd-days">0</div><div class="label">dias</div></div>
+          <div class="box"><div class="num" id="cd-hours">00</div><div class="label">h</div></div>
+          <div class="box"><div class="num" id="cd-mins">00</div><div class="label">min</div></div>
+          <div class="box"><div class="num" id="cd-secs">00</div><div class="label">s</div></div>
+          <div class="until">Encerra em <b>31/12/2025</b></div>
+        </div>
+    
+        <ul style="max-width:900px;margin:10px auto 0 auto;line-height:1.7;color:#ffffffcc">
+          <li><b>Quem participa:</b> assinantes ativos que indicarem novos clientes até <b>31/12/2025</b>.</li>
+          <li><b>Como contar:</b> cada indicação válida (após pagamento da 1ª mensalidade do indicado) = <b>1 número</b> no sorteio.</li>
+          <li><b>Quando:</b> sorteio em <b>janeiro/2026</b>; o ganhador usa o plano ESSENCIAL <b>de jan a dez/2026</b> sem pagar.</li>
+          <li><b>Se usar plano maior:</b> crédito mensal de <b>R$ 500</b> para abater do plano escolhido.</li>
+          <li><b>Válido no Brasil</b>, benefício intransferível e não conversível em dinheiro. Sujeito a regulamento completo.</li>
+        </ul>
+        <div class="cta-row" style="justify-content:center;margin-top:12px">
+          <a class="btn btn-accent" target="_blank" rel="noopener"
+             href="https://wa.me/5512981823416?text=Promoção%20Indique%20%26%20Ganhe%202026:%20quero%20indicar%20um%20amigo.%20Seguem%20dados:%20Nome%20-%20Telefone%20-%20@%20Rede%20Social.">
+             Indicar agora pelo WhatsApp</a>
+          <a class="btn btn-ghost" href="index.html#planos">Assinar um plano</a>
+        </div>
+      </div>
+    
+      <div class="cta-row" style="margin-top:10px;justify-content:center">
+        <span class="chip" style="border:1px solid #f26b35aa">🎁 Promo: Indique &amp; Ganhe 2026</span>
+      </div>
+
+    </section>
+
+    <section class="pricing container">
+      <div class="pricing-grid">
+        <article class="plan"><h3>START</h3><div class="price">R$ 250<span class="period">/mês</span></div>
+          <ul class="features"><li>4 posts feed (1080×1350)</li><li>4 stories (1080×1920)</li><li>1 revisão por peça</li><li>Prazo: 5 dias úteis</li></ul>
+          <div class="btn-block">
+            <a class="btn btn-accent" target="_blank" rel="noopener" href="https://wa.me/5512981823416?text=Olá,%20vim%20pelo%20site%20e%20quero%20assinar%20o%20Plano%20START%20(R$%20250/mês).">Assinar no WhatsApp</a>
+            <a class="btn btn-ghost" href="mailto:wildsarts@gmail.com?subject=Assinatura%20Plano%20START&body=Olá,%20quero%20assinar%20o%20Plano%20START%20(R$%20250/mês).">Assinar por e-mail</a>
+          </div>
+        </article>
+
+        <article class="plan"><h3>ESSENCIAL</h3><div class="price">R$ 500<span class="period">/mês</span></div>
+          <ul class="features"><li>8 posts feed</li><li>8 stories</li><li>1 carrossel (até 7 págs)</li><li>2 revisões por peça</li><li>Prazo: 3 dias úteis</li></ul>
+          <div class="btn-block">
+            <a class="btn btn-accent" target="_blank" rel="noopener" href="https://wa.me/5512981823416?text=Olá,%20vim%20pelo%20site%20e%20quero%20assinar%20o%20Plano%20ESSENCIAL%20(R$%20500/mês).">Assinar no WhatsApp</a>
+            <a class="btn btn-ghost" href="mailto:wildsarts@gmail.com?subject=Assinatura%20Plano%20ESSENCIAL&body=Olá,%20quero%20assinar%20o%20Plano%20ESSENCIAL%20(R$%20500/mês).">Assinar por e-mail</a>
+          </div>
+        </article>
+
+        <article class="plan recommended"><span class="badge">Recomendado</span><h3>PRO</h3><div class="price">R$ 750<span class="period">/mês</span></div>
+          <ul class="features"><li>12 posts feed</li><li>12 stories</li><li>2 carrosséis (até 7 págs)</li><li>1 motion curto (até 10s)</li><li>2 revisões por peça</li><li>Prazo: 48h</li></ul>
+          <div class="btn-block">
+            <a class="btn btn-accent" target="_blank" rel="noopener" href="https://wa.me/5512981823416?text=Olá,%20vim%20pelo%20site%20e%20quero%20assinar%20o%20Plano%20PRO%20(R$%20750/mês).">Assinar no WhatsApp</a>
+            <a class="btn btn-ghost" href="mailto:wildsarts@gmail.com?subject=Assinatura%20Plano%20PRO&body=Olá,%20quero%20assinar%20o%20Plano%20PRO%20(R$%20750/mês).">Assinar por e-mail</a>
+          </div>
+        </article>
+
+        <article class="plan"><h3>ELITE</h3><div class="price">R$ 1.000<span class="period">/mês</span></div>
+          <ul class="features"><li>16 posts feed</li><li>16 stories</li><li>3 carrosséis (até 7 págs)</li><li>2 motions curtos (até 10s)</li><li>3 revisões por peça</li><li>Prazo: 24–48h (prioridade)</li></ul>
+          <div class="btn-block">
+            <a class="btn btn-accent" target="_blank" rel="noopener" href="https://wa.me/5512981823416?text=Olá,%20vim%20pelo%20site%20e%20quero%20assinar%20o%20Plano%20ELITE%20(R$%201.000/mês).">Assinar no WhatsApp</a>
+            <a class="btn btn-ghost" href="mailto:wildsarts@gmail.com?subject=Assinatura%20Plano%20ELITE&body=Olá,%20quero%20assinar%20o%20Plano%20ELITE%20(R$%201.000/mês).">Assinar por e-mail</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="compare">
+        <div class="section-header center"><h2>Comparativo rápido</h2><p>Veja o que muda entre os planos</p></div>
+        <div class="glass">
+          <table>
+            <thead><tr><th>Recursos</th><th>START</th><th>ESSENCIAL</th><th>PRO</th><th>ELITE</th></tr></thead>
+            <tbody>
+              <tr><td>Posts (feed)</td><td>4</td><td>8</td><td>12</td><td>16</td></tr>
+              <tr><td>Stories</td><td>4</td><td>8</td><td>12</td><td>16</td></tr>
+              <tr><td>Carrosséis</td><td>—</td><td>1</td><td>2</td><td>3</td></tr>
+              <tr><td>Motions curtos</td><td>—</td><td>—</td><td>1</td><td>2</td></tr>
+              <tr><td>Revisões por peça</td><td>1</td><td>2</td><td>2</td><td>3</td></tr>
+              <tr><td>Prazo padrão</td><td>5 dias úteis</td><td>3 dias úteis</td><td>48h</td><td>24–48h</td></tr>
+              <tr><td>Prioridade</td><td>—</td><td>—</td><td>—</td><td>✔</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ & Termos -->
+    <section class="container" style="padding:36px 0">
+      <div class="section-header center">
+        <h2>Perguntas frequentes (FAQ)</h2>
+        <p>Tudo o que você precisa saber antes de assinar</p>
+      </div>
+
+      <div class="faq-grid" style="display:grid;gap:14px;grid-template-columns:1fr 1fr;">
+        <details class="glass" style="border-radius:14px;padding:14px">
+          <summary style="cursor:pointer;font-weight:800">O que conta como revisão?</summary>
+          <div style="margin-top:10px;color:#ffffffb3">Ajustes de texto, cores, ícones e pequenos alinhamentos dentro do conceito aprovado. Mudança de conceito/layout conta como nova peça.</div>
+        </details>
+        <details class="glass" style="border-radius:14px;padding:14px">
+          <summary style="cursor:pointer;font-weight:800">Como envio o briefing e materiais?</summary>
+          <div style="margin-top:10px;color:#ffffffb3">Via WhatsApp ou e-mail. Envie logo, paleta, referências e tom de voz. Envio um mini-briefing para agilizar.</div>
+        </details>
+        <details class="glass" style="border-radius:14px;padding:14px">
+          <summary style="cursor:pointer;font-weight:800">Prazo de entrega de cada plano</summary>
+          <div style="margin-top:10px;color:#ffffffb3">START: até 5 dias úteis · ESSENCIAL: 3 dias úteis · PRO: 48h · ELITE: 24–48h (prioridade).</div>
+        </details>
+        <details class="glass" style="border-radius:14px;padding:14px">
+          <summary style="cursor:pointer;font-weight:800">Vocês entregam os arquivos editáveis?</summary>
+          <div style="margin-top:10px;color:#ffffffb3">Sim, sob demanda. Taxa: R$ 50 por peça (.CDR/.AI/.PSD), para você ou sua equipe editarem.</div>
+        </details>
+        <details class="glass" style="border-radius:14px;padding:14px">
+          <summary style="cursor:pointer;font-weight:800">Quais formatos de arquivo recebo?</summary>
+          <div style="margin-top:10px;color:#ffffffb3">PNG pronto para publicação (feed 1080×1350, story 1080×1920). Outras proporções sob pedido.</div>
+        </details>
+        <details class="glass" style="border-radius:14px;padding:14px">
+          <summary style="cursor:pointer;font-weight:800">Posso pausar a assinatura?</summary>
+          <div style="margin-top:10px;color:#ffffffb3">Pode pausar por até 15 dias com aviso prévio. Recomendamos continuidade para manter a consistência da marca.</div>
+        </details>
+        <details class="glass" style="border-radius:14px;padding:14px">
+          <summary style="cursor:pointer;font-weight:800">Como funciona urgência?</summary>
+          <div style="margin-top:10px;color:#ffffffb3">Peças em 24h adicionam +40% de taxa de urgência. Disponibilidade conforme agenda.</div>
+        </details>
+        <details class="glass" style="border-radius:14px;padding:14px">
+          <summary style="cursor:pointer;font-weight:800">Formas de pagamento</summary>
+          <div style="margin-top:10px;color:#ffffffb3">Mensal antecipado via PIX. Fatura enviada no ato da contratação.</div>
+        </details>
+      </div>
+    </section>
+
+    <section class="container" style="padding:0 0 40px 0">
+      <div class="section-header center"><h2>Termos e condições (resumo)</h2></div>
+      <div class="glass" style="border-radius:16px;padding:16px">
+        <ul style="margin:0;padding-left:18px;line-height:1.7;color:#ffffffb3">
+          <li>Vigência mensal; recomendada permanência mínima de 3 meses para resultados consistentes.</li>
+          <li>Pagamento antecipado; início do ciclo após confirmação e recebimento do briefing.</li>
+          <li>Janela de revisões: até 7 dias após a entrega das peças do ciclo.</li>
+          <li>Reagendamento por falta de materiais do cliente por &gt;7 dias pode postergar o calendário.</li>
+          <li>Cancelamento: aviso com 15 dias de antecedência; mês corrente não é reembolsável.</li>
+          <li>Uso comercial liberado para a marca contratante. Banco de imagens premium: +R$ 40/peça (quando necessário).</li>
+        </ul>
+        <div class="cta-row center" style="margin-top:14px">
+          <a class="btn btn-accent" target="_blank" rel="noopener" href="https://wa.me/5512981823416?text=Olá,%20vim%20pelo%20site%20e%20quero%20assinar%20um%20plano%20de%20artes.">Falar agora no WhatsApp</a>
+          <a class="btn btn-ghost" href="planos_wildsarts.pdf" download>Baixar o PDF dos planos</a>
+        </div>
+      </div>
+    </section>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"O que conta como revisão?","acceptedAnswer":{"@type":"Answer","text":"Ajustes de texto, cores, ícones e pequenos alinhamentos dentro do conceito aprovado. Mudança de conceito/layout conta como nova peça."}},
+        {"@type":"Question","name":"Como envio o briefing e materiais?","acceptedAnswer":{"@type":"Answer","text":"Via WhatsApp ou e-mail. Envie logo, paleta, referências e tom de voz. Enviamos um mini-briefing para agilizar."}},
+        {"@type":"Question","name":"Prazo de entrega de cada plano","acceptedAnswer":{"@type":"Answer","text":"START: até 5 dias úteis; ESSENCIAL: 3 dias úteis; PRO: 48h; ELITE: 24–48h (prioridade)."}},
+        {"@type":"Question","name":"Vocês entregam os arquivos editáveis?","acceptedAnswer":{"@type":"Answer","text":"Sim, sob demanda. Taxa: R$ 50 por peça (.CDR/.AI/.PSD)."}},
+        {"@type":"Question","name":"Quais formatos de arquivo recebo?","acceptedAnswer":{"@type":"Answer","text":"PNG pronto para publicação (feed 1080×1350, story 1080×1920). Outras proporções sob pedido."}},
+        {"@type":"Question","name":"Posso pausar a assinatura?","acceptedAnswer":{"@type":"Answer","text":"Pode pausar por até 15 dias com aviso prévio."}},
+        {"@type":"Question","name":"Como funciona urgência?","acceptedAnswer":{"@type":"Answer","text":"Peças em 24h adicionam +40% de taxa de urgência. Disponibilidade conforme agenda."}},
+        {"@type":"Question","name":"Formas de pagamento","acceptedAnswer":{"@type":"Answer","text":"Mensal antecipado via PIX. Fatura enviada no ato da contratação."}}
+      ]
+    }
+    </script>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid">
+    <span class="brand-badge brand-badge--sm"><img src="Logo Horizontal.webp" alt="Wilds Art's — logotipo horizontal" width="150" height="40"/></span>
+    <nav class="social" aria-label="Redes sociais">
+      <a href="https://www.instagram.com/wildsarts" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">📷</a>
+      <a href="https://www.tiktok.com/@wildsarts" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok">🎵</a>
+      <a href="https://www.youtube.com/@wildsarts" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube">▶️</a>
+      <a href="https://www.linkedin.com/in/wildsarts" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">in</a>
+    </nav>
+    <small class="copy">© <span id="year"></span> Wilds Art's. Todos os direitos reservados.</small>
+  </div></footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
